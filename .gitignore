@@ -20,8 +20,9 @@ venv/
 # ----------------------
 # Data files
 # ----------------------
-/data/raw/*  # Raw datasets (use scripts to fetch instead)
-/data/processed/*  # Processed data files
+/data/raw/*
+/data/preprocessing/*
+/data/corpus/*
 *.tsv
 *.zip
 *.tar.gz
