@@ -23,6 +23,7 @@ venv/
 /data/raw/*
 /data/preprocessing/*
 /data/corpus/*
+/data/evaluation/*
 *.tsv
 *.zip
 *.tar.gz
