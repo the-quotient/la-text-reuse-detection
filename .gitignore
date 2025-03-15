@@ -42,7 +42,7 @@ venv/
 # ----------------------
 # Model Files & Checkpoints
 # ----------------------
-/models/*  # Store models externally (DVC, S3, etc.)
+/models/*
 *.h5
 *.ckpt
 *.pt
