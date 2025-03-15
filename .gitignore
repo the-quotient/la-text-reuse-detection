@@ -24,6 +24,8 @@ venv/
 /data/preprocessing/*
 /data/corpus/*
 /data/evaluation/*
+/data/test/*
+/data/training/*
 *.tsv
 *.zip
 *.tar.gz
