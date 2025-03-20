@@ -13,18 +13,19 @@ WAIT_TIME = 10
 
 class RequestRunner:
 
-    def __init__(self, model: str, system_message: str, prompt: str,
-                 temperature: float):
+    def __init__(self, model: str, system_message: str, prompt: str):
         self.model = model
         self.system_message = system_message
         self.prompt = prompt
-        self.temperature = temperature
+        self.temperature = 0.5
 
         load_dotenv() 
         openai.api_key = os.getenv("OPENAI_API_KEY")
 
 
-    def process(self, batch: List[Tuple[int, str]]) -> List[Tuple[int, str]]:
+    def process(self, batch: List[Tuple[int, str]], temperature: float)
+        -> List[Tuple[int, str]]:
+        self.temperature = temperature
         retries = 0
         while retries < MAX_RETRIES:
             try:
