@@ -23,8 +23,11 @@ class RequestRunner:
         openai.api_key = os.getenv("OPENAI_API_KEY")
 
 
-    def process(self, batch: List[Tuple[int, str]], temperature: float)
-        -> List[Tuple[int, str]]:
+    def process(
+        self, 
+        batch: List[Tuple[int, str]], 
+        temperature: float
+    ) -> List[Tuple[int, str]]:
         self.temperature = temperature
         retries = 0
         while retries < MAX_RETRIES:
