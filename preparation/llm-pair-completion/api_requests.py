@@ -12,7 +12,7 @@ MAX_RETRIES = 10
 WAIT_TIME = 10 
 
 class RequestRunner:
-    
+
     def __init__(self, model: str, system_message: str, prompt: str,
                  temperature: float):
         self.model = model
@@ -23,18 +23,19 @@ class RequestRunner:
         load_dotenv() 
         openai.api_key = os.getenv("OPENAI_API_KEY")
 
-    
-    def process(self, batch: List[str]) -> List[Tuple[str, str]]:
+
+    def process(self, batch: List[Tuple[int, str]]) -> List[Tuple[int, str]]:
         retries = 0
         while retries < MAX_RETRIES:
             try:
                 return self._process_batch(batch)
             except (json.JSONDecodeError, ValueError) as e:
                 logging.warning(
-                    f"Error processing batch: {e}." 
+                    f"Error processing batch: {e}. "
                     "Switching to single sentence processing."
                 )
-                return [self._process_batch([sentence])[0] for sentence in batch]
+                return [self._process_batch([sentence_tuple])[0] 
+                        for sentence_tuple in batch]
             except OpenAIError as e:
                 logging.warning(f"OpenAI API error: {e}")
                 retries += 1
@@ -45,31 +46,31 @@ class RequestRunner:
                 time.sleep(WAIT_TIME)
         raise RuntimeError("Maximum retries reached. API is not responding.")
 
-    
-    def _process_batch(self, batch: List[str]) -> List[Tuple[str, str]]:
+
+    def _process_batch(self, batch: List[Tuple[int, str]]) -> List[Tuple[int, str]]:
         response_str = self._request(self._build_json_input(batch))
         response = json.loads(response_str)
         if len(response) != len(batch):
             raise ValueError("Mismatch between input and output sentence counts.")
         results = []
-        for i, item in enumerate(response):
-            if item.get('index') != i:
-                raise ValueError(f"Index mismatch at sentence {i}")
+        for (input_index, _), item in zip(batch, response):
+            if item.get('index') != input_index:
+                raise ValueError(f"Index mismatch for index {input_index}")
             processed = item.get('processed_sentence', "").strip()
-            results.append((batch[i], processed))
+            results.append((input_index, processed))
         return results
 
-    
-    def _build_json_input(self, batch: List[str]) -> str:
+
+    def _build_json_input(self, batch: List[Tuple[int, str]]) -> str:
         return json.dumps({
             "instructions": self.prompt,
             "sentences": [
-                {"index": i, "sentence": sentence}
-                for i, sentence in enumerate(batch)
+                {"index": index, "sentence": sentence}
+                for index, sentence in batch
             ]
         }, ensure_ascii=False, indent=2)
 
-    
+
     def _request(self, content: str) -> str:
         return openai.chat.completions.create(
             model=self.model,
