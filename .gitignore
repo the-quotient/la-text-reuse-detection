@@ -26,6 +26,7 @@ venv/
 /data/evaluation/*
 /data/test/*
 /data/training/*
+/data/llm-completed-pairs/*
 *.tsv
 *.zip
 *.tar.gz
@@ -53,7 +54,7 @@ venv/
 # ----------------------
 # Experiment Results
 # ----------------------
-/results/raw/*  # Raw evaluation outputs (not needed in Git)
+/results/raw/*
 
 # ----------------------
 # Dependencies
