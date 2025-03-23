@@ -9,8 +9,8 @@ import openai
 from openai import OpenAIError
 from dotenv import load_dotenv
 
-MAX_RETRIES = 10  
-WAIT_TIME = 10 
+MAX_RETRIES = 10
+WAIT_TIME = 10
 
 
 examples_la = (
@@ -55,18 +55,18 @@ class RequestRunner:
         load_dotenv() 
         openai.api_key = os.getenv("OPENAI_API_KEY")
 
-    
+
     def process(
         self, 
         batch: List[List[Tuple[int, str]]], 
         temperature: float,
         prompt=None
     ) -> List[Tuple[int, str]]:
-    
+
         self.temperature = temperature
         if prompt is not None:
             self.prompt = prompt 
-            
+
         retries = 0
         while retries < MAX_RETRIES:
             try:
@@ -76,8 +76,13 @@ class RequestRunner:
                     f"Error processing batch: {e}. "
                     "Switching to single sentence processing."
                 )
-                return [self._process_batch([sentence_tuple])[0] 
-                        for sentence_tuple in batch]
+                result = []
+                for sentence in batch:
+                    try:
+                        result.append(self._process_batch([sentence])[0])
+                    except Exception as e:
+                        logging.warning(f"Error processing sentence: {e}")
+                return result
             except OpenAIError as e:
                 logging.warning(f"OpenAI API error: {e}")
                 retries += 1
@@ -123,7 +128,7 @@ class RequestRunner:
             ]
         ).choices[0].message.content
 
-    
+
     def _get_system_message(self, language):
         return (
             f"You are an Early Modern scholar from the 16th century specialized in "
