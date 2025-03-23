@@ -19,7 +19,7 @@ parallel --jobs "$NUM_REQUESTS" \
   ::: $(seq 1 $NUM_REQUESTS)
 
 jq -s '.' "$RESULT_DIR"/paraphrases_*.json > "$RESULT_DIR"/paraphrases.json 
-jq 'flatten(1)' paraphrases.json > tmp.json && mv tmp.json paraphrases.json
+jq 'flatten(1)' "$RESULT_DIR"/paraphrases.json > tmp.json && mv tmp.json "$RESULT_DIR"/paraphrases.json
 
 rm "$RESULT_DIR"/paraphrases_*.json
 
@@ -34,7 +34,7 @@ parallel --jobs "$NUM_REQUESTS" \
   ::: $(seq 1 $NUM_REQUESTS)
 
 jq -s '.' "$RESULT_DIR"/similar_sentences_*.json > "$RESULT_DIR"/similar_sentences.json
-jq 'flatten(1)' similar_sentences.json > tmp.json && mv tmp.json similar_sentences.json
+jq 'flatten(1)' "$RESULT_DIR"/similar_sentences.json > tmp.json && mv tmp.json "$RESULT_DIR"/similar_sentences.json
 
 rm "$RESULT_DIR"/similar_sentences_*.json
 
