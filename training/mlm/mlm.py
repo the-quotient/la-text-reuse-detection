@@ -3,6 +3,7 @@ import gzip
 import json
 import logging
 import os
+import random
 import re
 import sys
 import warnings
@@ -21,7 +22,7 @@ from transformers import (
 )
 
 # Hyperparameters
-per_device_train_batch_size = 32
+per_device_train_batch_size = 16
 save_steps = 500
 num_train_epochs = 15
 use_fp16 = True
@@ -32,20 +33,31 @@ weight_decay = 0.01
 
 def setup_logging(log_file, rank):
     """
-    Sets up logging for distributed training.
-    Logs to a file for rank 0, and sets error logging for other ranks.
+    Sets up root logger for distributed training.
+    Only rank 0 logs to file at INFO level.
+    All other ranks log ERROR to stderr.
     """
+
+    root_logger = logging.getLogger()
+    root_logger.setLevel(logging.DEBUG)
+    root_logger.handlers.clear()
+
+    formatter = logging.Formatter(
+        "%(asctime)s - %(levelname)s - %(message)s", "%Y-%m-%d %H:%M:%S"
+    )
+
     if rank == 0:
-        logging.basicConfig(
-            filename=log_file,
-            format="%(asctime)s - %(message)s",
-            datefmt="%Y-%m-%d %H:%M:%S",
-            level=logging.INFO,
-            force=True
-        )
+        file_handler = logging.FileHandler(log_file)
+        file_handler.setLevel(logging.INFO)
+        file_handler.setFormatter(formatter)
+        root_logger.addHandler(file_handler)
     else:
-        logging.basicConfig(level=logging.ERROR, force=True)
-    return logging.getLogger(__name__)
+        error_handler = logging.StreamHandler(sys.stderr)
+        error_handler.setLevel(logging.ERROR)
+        error_handler.setFormatter(formatter)
+        root_logger.addHandler(error_handler)
+
+    return root_logger
 
 
 def parse_args():
@@ -71,14 +83,14 @@ def init_distributed():
     return 0
 
 
-def load(file_path: str) -> List[str], List[str]:
+def load(file_path):
 
     with open(file_path, 'r', encoding='utf-8') as f:
         sentences = [json.loads(line)["sentence"] for line in f if line.strip()]
 
     random.shuffle(sentences)
 
-    split_index = int(len(sentences) * train_ratio)
+    split_index = int(len(sentences) * 0.9)
     train_sentences = sentences[:split_index]
     dev_sentences = sentences[split_index:]
 
@@ -132,7 +144,7 @@ def main():
     tokenizer = AutoTokenizer.from_pretrained(args.pretrained_model_name)
 
     logger.info("Loading training and dev data...")
-    train_sentences, dev sentences = load(args.train_file)
+    train_sentences, dev_sentences = load(args.data_file)
     logger.info("Loaded %s training sentences.", len(train_sentences))
     logger.info("Loaded %s dev sentences.", len(dev_sentences))
 

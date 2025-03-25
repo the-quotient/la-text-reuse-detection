@@ -23,5 +23,4 @@ torchrun --nproc_per_node=6 mlm.py \
   CE-MLM \
   $WORK/models/LaBERTa/ \
   $WORK/models/ \
-  $WORK/data/mlm/mlm_train.jsonl \
-  $WORK/data/mlm/mlm_dev.jsonl
+  $WORK/data/mlm/corpus.jsonl \

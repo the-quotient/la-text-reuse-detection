@@ -21,7 +21,6 @@ export OMP_NUM_THREADS=4
 
 torchrun --nproc_per_node=2 mlm.py \
   TEST-MLM \
-  $WORK/models/LaBERTa-base/ \
+  $WORK/models/LaBERTa/ \
   $WORK/models/tests/ \
-  $WORK/data/test/mlm_test_train.jsonl \
-  $WORK/data/test/mlm_test_dev.jsonl
+  $WORK/data/test/mlm_test.jsonl
