@@ -1,25 +1,34 @@
-import os
-import sys
-import json
+import argparse
 import gzip
+import json
 import logging
-import warnings
+import os
 import re
+import sys
+import warnings
 from datetime import datetime
 from pathlib import Path
+
 import torch
 import torch.distributed as dist
-import argparse
-
 from transformers import (
     AutoModelForMaskedLM,
     AutoTokenizer,
     DataCollatorForLanguageModeling,
-    DataCollatorForWholeWordMask,
     Trainer,
     TrainingArguments,
     EarlyStoppingCallback,
 )
+
+# Hyperparameters
+per_device_train_batch_size = 32
+save_steps = 500
+num_train_epochs = 15
+use_fp16 = True
+max_length = 256
+mlm_prob = 0.15
+weight_decay = 0.01
+
 
 def setup_logging(log_file, rank):
     """
@@ -44,8 +53,7 @@ def parse_args():
     parser.add_argument("model_name", type=str)
     parser.add_argument("pretrained_model_name", type=str)
     parser.add_argument("output_dir", type=str)
-    parser.add_argument("train_file", type=str)
-    parser.add_argument("dev_file", type=str)
+    parser.add_argument("data_file", type=str)
     return parser.parse_args()
 
 
@@ -63,23 +71,18 @@ def init_distributed():
     return 0
 
 
-def read_jsonl_file(file_path):
-    sentences = []
-    open_fn = gzip.open if file_path.endswith(".gz") else open
-    with open_fn(file_path, "rt", encoding="utf8") as f:
-        for line in f:
-            line = line.strip()
-            if not line:
-                continue
-            try:
-                data = json.loads(line)
-            except json.JSONDecodeError as e:
-                logging.error("Error parsing JSON: %s", e)
-                continue
-            sentence = data.get("sentence")
-            if sentence is not None:
-                sentences.append(sentence)
-    return sentences
+def load(file_path: str) -> List[str], List[str]:
+
+    with open(file_path, 'r', encoding='utf-8') as f:
+        sentences = [json.loads(line)["sentence"] for line in f if line.strip()]
+
+    random.shuffle(sentences)
+
+    split_index = int(len(sentences) * train_ratio)
+    train_sentences = sentences[:split_index]
+    dev_sentences = sentences[split_index:]
+
+    return train_sentences, dev_sentences
 
 
 class TokenizedSentencesDataset:
@@ -124,48 +127,23 @@ def main():
     logger = setup_logging(f"{args.model_name}.log", local_rank)
     logger.info("Starting training...")
 
-    # Hyperparameters
-    per_device_train_batch_size = 32
-    save_steps = 500
-    num_train_epochs = 15
-    use_fp16 = True
-    max_length = 256
-    do_whole_word_mask = False
-    mlm_prob = 0.15
-    weight_decay = 0.01
-
     logger.info("Loading model and tokenizer...")
     model = AutoModelForMaskedLM.from_pretrained(args.pretrained_model_name)
     tokenizer = AutoTokenizer.from_pretrained(args.pretrained_model_name)
 
-    logger.info("Loading training data...")
-    train_sentences = read_jsonl_file(args.train_file)
+    logger.info("Loading training and dev data...")
+    train_sentences, dev sentences = load(args.train_file)
     logger.info("Loaded %s training sentences.", len(train_sentences))
-
-    dev_sentences = []
-    if args.dev_file:
-        logger.info("Loading dev data...")
-        dev_sentences = read_jsonl_file(args.dev_file)
-        logger.info("Loaded %s dev sentences.", len(dev_sentences))
+    logger.info("Loaded %s dev sentences.", len(dev_sentences))
 
     train_dataset = TokenizedSentencesDataset(train_sentences, tokenizer, max_length)
-    dev_dataset = (
-        TokenizedSentencesDataset(
-            dev_sentences, tokenizer, max_length, cache_tokenization=True,
-        )
-        if dev_sentences
-        else None
+    dev_dataset = TokenizedSentencesDataset(
+        dev_sentences, tokenizer, max_length, cache_tokenization=True
     )
 
-    # Choose the appropriate data collator.
-    if do_whole_word_mask:
-        data_collator = DataCollatorForWholeWordMask(
-            tokenizer=tokenizer, mlm=True, mlm_probability=mlm_prob
-        )
-    else:
-        data_collator = DataCollatorForLanguageModeling(
-            tokenizer=tokenizer, mlm=True, mlm_probability=mlm_prob
-        )
+    data_collator = DataCollatorForLanguageModeling(
+        tokenizer=tokenizer, mlm=True, mlm_probability=mlm_prob
+    )
 
     training_args = TrainingArguments(
         output_dir=str(output_dir),
