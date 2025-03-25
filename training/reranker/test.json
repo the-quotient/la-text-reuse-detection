@@ -1,0 +1,47 @@
+[
+    {
+        "sentence1": "Nam Iudaei de edenda non immolanda carne disputabant, quo et Christi sermonem tendere necesse est.",
+        "sentence2": "Praemisit autem ministros suos Timotheum et Erastum, fortassis illum Corinthiorum quaestorem, cuius mentio fit ad Roma.",
+        "label": "irrelevant"
+    },
+    {
+        "sentence1": "autem de quali promissione loquar, de remissione peccatorum et uita aeterna, fidelibus per traditum domini corpus sanguinemque effusum parta.",
+        "sentence2": "Judaicus quia possidebatur a diabolo, daemonia colens pro Deo, neque enim notus illi erat Deus.",
+        "label": "irrelevant"
+    },
+    {
+        "sentence1": "Haec igitur eorum uoluntas et natura sic a Deo auersa, non est nihil, Nequeenim Satan et impius homo nihil est, aut nullam naturam aut uoluntatem habent, licet corruptam et auersam naturam habeant.",
+        "sentence2": "Uidi, inquit, coelum apertum, et ecce equus albus, et qui sedebat super eum, uocabatur Fidelis, et Uerax et exercitus qui sunt in coelo, sequebantur eum Apoc. xix.",
+        "label": "irrelevant"
+    },
+    {
+        "sentence1": "Uidit requiem quod esset bona, et terram quod optima, et supposuit humerum suum ad portandum, et factus est tributis seruiens.",
+        "sentence2": "Et quia acceperunt spiritum Christi, deum ut patrem inuocant, sicut Christus.",
+        "label": "irrelevant"
+    },
+    {
+        "sentence1": "Item de dictis loquentibus de Christo humiliato, aut regnante.",
+        "sentence2": "Ac anni quidem imperii Tiberii patiuntur hoc, si primis illis non plures assignaris annos, quam isti tribuunt, singulis uidelicet duos, Ualerio Grato aut Gracho septem, cui Iosephus annumerat annos undecim.",
+        "label": "irrelevant"
+    },
+    {
+        "sentence1": "Nisi enim antea peccatum cognitum fuerit, Christi iustitiam nunquam spiraueris utpote, sub cruce occultius tectam, quam ut a ratione humana inueniri aut credi possit.",
+        "sentence2": "Ubicunque igitur non exprimitur nomen angeli, non intelligimus angelos.",
+        "label": "irrelevant"
+    },
+    {
+        "sentence1": "praecipitare in sensum reprobum, ut sceleribus suis exitium ipsi sibi atrocius accersant, et se dignos faciant, in quibus Deus irae suae exempla edat",
+        "sentence2": "Nobis posterior sensus magis probatur, quia dicit regna, quomodo et Hieronymus uertit, non regnum quamuis huiusmodi \u1f10\u03be\u03b1\u03bb\u03bb\u03b1\u03b3\u03b1\u1f77 frequentes sint apud eos.",
+        "label": "irrelevant"
+    },
+    {
+        "sentence1": "Siquidem uarii Psalmi sunt, non nisi uariarum passionum affectus et consilia.",
+        "sentence2": "Nicodemus enim et Ioseph ab Arimathia, emerunt eo die unguenta, et sindonem, atque Dominum unctum sepelierunt, quae haud magis in ipso die paschae, quam sabbatho licuissent.",
+        "label": "irrelevant"
+    },
+    {
+        "sentence1": "sed en peruersitatem rationis humanae, et hypocrisis carnalis, quae non accipit legem, tanquam occidentem, sed tanquam iustificantem",
+        "sentence2": "Gratiarumactio primo et propriissime gratias quas pro acceptis beneficiis agimus comprehendit, deinde uero hymnos et laudes diuinas, quae in libro Psalmorum Epinitia, Confessiones ac Benedictiones appellantur.",
+        "label": "irrelevant"
+    }
+]

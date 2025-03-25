@@ -1,0 +1,27 @@
+[
+    {
+        "sentence1": "Nam Iudaei de edenda non immolanda carne disputabant, quo et Christi sermonem tendere necesse est.",
+        "sentence2": "Rectius igitur illi Socrates auream tripodem, si eum nouisset, quam Apollini suo adiudicasset.",
+        "label": "irrelevant"
+    },
+    {
+        "sentence1": "sed en peruersitatem rationis humanae, et hypocrisis carnalis, quae non accipit legem, tanquam occidentem, sed tanquam iustificantem",
+        "sentence2": "Nam studuerat ibi maxime praedicare, ubi ante eum nemo praedicasset, quo semper latius proferret Euangelium, et efficeret, ut iuxta uaticinium Iesaiae uiderent quibus antea non fuisset adnunciatum.",
+        "label": "irrelevant"
+    },
+    {
+        "sentence1": "autem de quali promissione loquar, de remissione peccatorum et uita aeterna, fidelibus per traditum domini corpus sanguinemque effusum parta.",
+        "sentence2": "Ille demum pessimus sit oportet, qui cum plurimum prodesse possit, si bonus sit, summo omnium malo, malus est.",
+        "label": "irrelevant"
+    },
+    {
+        "sentence1": "Haec igitur eorum uoluntas et natura sic a Deo auersa, non est nihil, Nequeenim Satan et impius homo nihil est, aut nullam naturam aut uoluntatem habent, licet corruptam et auersam naturam habeant.",
+        "sentence2": "Post hanc columbam emittitur alia, quae inuenit terram desiccatam, et non sol montes sed arbores quoque nudatas aqua.",
+        "label": "irrelevant"
+    },
+    {
+        "sentence1": "Uidit requiem quod esset bona, et terram quod optima, et supposuit humerum suum ad portandum, et factus est tributis seruiens.",
+        "sentence2": "Et Martianus imperator, qui habuit synodum Chalcedonensem, ait se exemplo Constantini affuturum in synodo, ut pate facta ueritate, curet deinceps populo unam certam sententiam proponi, et prohibeat prauas opiniones.",
+        "label": "irrelevant"
+    }
+]
