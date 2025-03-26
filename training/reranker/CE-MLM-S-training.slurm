@@ -1,0 +1,31 @@
+#!/bin/bash
+
+#SBATCH --job-name=CE-MLM-S-TRAINING
+#SBATCH --output=CE-MLM-S-TRAINING.out
+#SBATCH --error=CE-MLM-S-TRAINING.err
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=p_krae02@uni-muenster.de
+
+#SBATCH --partition=gpu4090,gpu3090,gpu2080
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=6
+#SBATCH --cpus-per-task=4
+#SBATCH --gres=gpu:6
+#SBATCH --time=7-00:00:00
+
+module --force purge
+module load palma/2020a
+
+export LD_LIBRARY_PATH=/usr/lib:/usr/lib64:$LD_LIBRARY_PATH
+export OMP_NUM_THREADS=6
+
+torchrun --nproc_per_node=6 train_reranker.py \
+  "$WORK/models/CE-MLM/" \
+  "$WORK/data/reranker_s/training_reranker_s.json" \
+  "$WORK/models/tests/" \
+  "s" \
+  "v0" \
+  0.9 \
+  32 \
+  3
+
