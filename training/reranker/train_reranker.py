@@ -9,7 +9,9 @@ from collections import Counter
 import numpy as np
 import torch
 import torch.distributed as dist
+from torch.nn.parallel import DistributedDataParallel as DDP
 from torch.utils.data import DataLoader
+from torch.utils.data.distributed import DistributedSampler
 from datasets import Dataset
 
 from sentence_transformers import (
@@ -20,8 +22,7 @@ from sentence_transformers import (
 )
 from sentence_transformers.models import Transformer, Pooling
 from sentence_transformers.cross_encoder.evaluation import (
-    CEF1Evaluator, 
-    CESoftmaxAccuracyEvaluator
+    CEF1Evaluator
 )
 from sentence_transformers.evaluation import (
     EmbeddingSimilarityEvaluator,
@@ -30,6 +31,12 @@ from sentence_transformers.evaluation import (
 from sentence_transformers.trainer import SentenceTransformerTrainer
 from sentence_transformers.training_args import SentenceTransformerTrainingArguments
 
+def set_seed(seed: int = 42):
+    random.seed(seed)
+    np.random.seed(seed)
+    torch.manual_seed(seed)
+    if torch.cuda.is_available():
+        torch.cuda.manual_seed_all(seed)
 
 def setup_logging(log_file, rank):
     if rank == 0:
@@ -44,12 +51,7 @@ def setup_logging(log_file, rank):
     return logging.getLogger(__name__)
 
 
-def prepare_data(data_file, ce_label, train_ratio, logger):
-    """
-    Loads data from a JSON file with structure sentence1, sentence2, label.
-    Maps labels: "irrelevant" -> 0, others -> 1.
-    Shuffles the data and splits it into training and validation sets.
-    """
+def prepare_data(data_file, ce_label, logger):
     with open(data_file, "r", encoding="utf-8") as f:
         data = json.load(f)
     all_samples = []
@@ -63,7 +65,7 @@ def prepare_data(data_file, ce_label, train_ratio, logger):
                          label=mapped_label)
         )
     random.shuffle(all_samples)
-    split_index = int(train_ratio * len(all_samples))
+    split_index = int(0.9 * len(all_samples))
     return all_samples[:split_index], all_samples[split_index:]
 
 
@@ -72,7 +74,7 @@ def train_cross_encoder(args, ce_label, rank, logger):
     num_labels = 2
 
     train_samples, dev_samples = prepare_data(
-        args.data_file, ce_label, args.train_ratio, logger
+        args.data_file, ce_label, logger
     )
 
     device = torch.device(
@@ -86,46 +88,82 @@ def train_cross_encoder(args, ce_label, rank, logger):
         args.pretrained_model_path,
         num_labels=num_labels,
         device=device,
-        max_length=512
+        max_length=args.max_seq_length
     )
 
-    train_dataloader = DataLoader(
-        train_samples, batch_size=args.train_batch_size, shuffle=True
-    )
+    if dist.is_initialized():
+        model.model = DDP(model.model, device_ids=[rank])
+
+    if dist.is_initialized():
+        train_sampler = DistributedSampler(
+            train_samples,
+            num_replicas=dist.get_world_size(),
+            rank=dist.get_rank(),
+            shuffle=True
+        )
+        train_dataloader = DataLoader(
+            train_samples,
+            batch_size=args.train_batch_size,
+            sampler=train_sampler
+        )
+    else:
+        train_dataloader = DataLoader(
+            train_samples,
+            batch_size=args.train_batch_size,
+            shuffle=True
+        )
+
     dev_f1_evaluator = CEF1Evaluator.from_input_examples(
         dev_samples, name="dev-f1"
     )
 
+    train_steps_per_epoch = len(train_dataloader)
+    total_steps = train_steps_per_epoch * args.num_epochs
+    total_warmup_steps = int(0.1 * total_steps)
+    warmup_per_epoch = total_warmup_steps // args.num_epochs
+
     output_path = os.path.join(
         args.output_base_path,
-        f"SF-{args.label.upper()}-{args.version}-"
-        f"{datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}",
+        f"CE{args.label.upper()}-{args.version}"
     )
 
-    warmup_steps = int(0.1 * len(train_dataloader) * args.num_epochs)
+    for epoch in range(args.num_epochs):
+        if dist.is_initialized():
+            train_dataloader.sampler.set_epoch(epoch)
 
-    model.fit(
-        train_dataloader=train_dataloader,
-        evaluator=dev_f1_evaluator,
-        epochs=args.num_epochs,
-        warmup_steps=warmup_steps,
-        output_path=output_path,
-        loss_fct=loss_function
-    )
-    logger.info(f"Model saved to {output_path}")
+        model.fit(
+            train_dataloader=train_dataloader,
+            evaluator=dev_f1_evaluator,
+            epochs=1,
+            warmup_steps=warmup_per_epoch,
+            output_path=None,
+            loss_fct=loss_function,
+            use_amp=True
+        )
+        if rank == 0:
+            logger.info(f"Finished epoch {epoch+1}/{args.num_epochs}")
+
+    if rank == 0:
+        if isinstance(model.model, DDP):
+            model.model.module.save_pretrained(output_path)
+        else:
+            model.model.save_pretrained(output_path)
+        logger.info(f"Final model saved to {output_path}")
 
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("pretrained_model_path")
-    parser.add_argument("data_file")
-    parser.add_argument("output_base_path")
-    parser.add_argument("label")
-    parser.add_argument("version", default="")
-    parser.add_argument("train_ratio", type=float, default=0.9)
-    parser.add_argument("train_batch_size", type=int)
-    parser.add_argument("num_epochs", type=int)
+    parser.add_argument("--pretrained_model_path", required=True)
+    parser.add_argument("--data_file", required=True)
+    parser.add_argument("--output_base_path", required=True)
+    parser.add_argument("--label", required=True)
+    parser.add_argument("--version", required=True)
+    parser.add_argument("--train_batch_size", type=int, required=True)
+    parser.add_argument("--num_epochs", type=int, required=True)
+    parser.add_argument("--max_seq_length", type=int, required=True)
     args = parser.parse_args()
+
+    set_seed(42)
 
     local_rank = int(os.environ.get("LOCAL_RANK", -1))
     device = torch.device(
@@ -145,9 +183,9 @@ def main():
     elif args.label == "s":
         ce_label = "similar_sentence"
     else:
-        raise Error()
+        raise ValueError("Only p for paraphrase and s for similar_sentences supported.")
 
-    logger = setup_logging(f"CE{ce_label}{args.version}", rank)
+    logger = setup_logging(f"logs/CE{args.label.upper()}-{args.version}.log", rank)
     logger.info("Starting training...")
 
     train_cross_encoder(args, ce_label, rank, logger)
