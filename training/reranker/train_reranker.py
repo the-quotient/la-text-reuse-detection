@@ -31,12 +31,16 @@ from sentence_transformers.evaluation import (
 from sentence_transformers.trainer import SentenceTransformerTrainer
 from sentence_transformers.training_args import SentenceTransformerTrainingArguments
 
+from transformers import AutoTokenizer
+
+
 def set_seed(seed: int = 42):
     random.seed(seed)
     np.random.seed(seed)
     torch.manual_seed(seed)
     if torch.cuda.is_available():
         torch.cuda.manual_seed_all(seed)
+
 
 def setup_logging(log_file, rank):
     if rank == 0:
@@ -148,7 +152,11 @@ def train_cross_encoder(args, ce_label, rank, logger):
             model.model.module.save_pretrained(output_path)
         else:
             model.model.save_pretrained(output_path)
-        logger.info(f"Final model saved to {output_path}")
+
+        tokenizer = AutoTokenizer.from_pretrained(args.pretrained_model_path)
+        tokenizer.save_pretrained(output_path)
+
+        logger.info(f"Final model and tokenizer saved to {output_path}")
 
 
 def main():

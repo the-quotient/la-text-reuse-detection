@@ -14,16 +14,14 @@
 #SBATCH --time=0-00:10:00
 
 
-MODEL_PATH="$WORK/models/CE-MLM"
+MODEL_PATH="$WORK/models/CE-MLM/"
 DATA_FILE="$WORK/data/test/test_training.json"
 OUTPUT_DIR="$WORK/models/test"
 LABEL="p"
 
-EPOCHS=${EPOCHS:-3}
-VERSION="${EPOCHS}E"
-
 SEQ_LENGTH=128
 BATCH_SIZE=16
+EPOCHS=5
 
 
 module --force purge

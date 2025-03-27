@@ -1,8 +1,8 @@
 #!/bin/bash
 
-#SBATCH --job-name="CES-${EPOCHS}E"
-#SBATCH --output=logs/CES-${EPOCHS}E_%j.out
-#SBATCH --error=logs/CES-${EPOCHS}E_%j.err
+#SBATCH --job-name="CES"
+#SBATCH --output=logs/CES_%j.out
+#SBATCH --error=logs/CES_%j.err
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=p_krae02@uni-muenster.de
 
@@ -12,18 +12,17 @@
 #SBATCH --cpus-per-task=4
 #SBATCH --mem=64G
 #SBATCH --gres=gpu:6
-#SBATCH --time=7-00:00:00
+#SBATCH --time=1-00:00:00
 
 
-MODEL_PATH="$WORK/models/CE-MLM"
+MODEL_PATH="$WORK/models/CE-MLM/"
 DATA_FILE="$WORK/data/reranker_s/training_reranker_s.json"
 OUTPUT_DIR="$WORK/models/"
 LABEL="s"
 
-VERSION="${EPOCHS}E"
-
 SEQ_LENGTH=128
 BATCH_SIZE=32
+EPOCHS=5
 
 
 module --force purge
