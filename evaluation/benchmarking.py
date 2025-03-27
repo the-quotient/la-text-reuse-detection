@@ -1,3 +1,4 @@
+import json
 import os
 import sys
 import warnings
@@ -15,10 +16,10 @@ from app import Retrieval, Reranking
 
 
 class BenchmarkRunner:
-    
+
     def __init__(self, model_folder, models, data_folder, samples, result_folder,
                  pipeline_configs, retrieval_configs, reranker_configs):
-        
+
         self.model_folder = model_folder
         self.models = models
         self.data_folder = data_folder
@@ -28,7 +29,7 @@ class BenchmarkRunner:
         self.retrieval_configs = retrieval_configs
         self.reranker_configs = reranker_configs
 
-    
+
     def benchmark(self):
 
         not_none_models = [
@@ -52,40 +53,34 @@ class BenchmarkRunner:
             self._benchmark_retriever()
         else:
             print("Starting Reranker Benchmarking.")
-            data = self._load_data(self.samples.get(['F', 'P', 'C'][index - 1]))
-            self._benchmark_reranker(os.path.join(self.model_folder, model), data)
+            data = self._load(self.samples.get(['F', 'P', 'C'][index - 1]))
+            for df in data:
+                self._benchmark_reranker(os.path.join(self.model_folder, model), df)
 
-    
-    def _load_data(self, sample_names):
+
+    def _load(self, sample_names):
         dataframes = []
-        expected_cols = {'sentence1', 'sentence2', 'label'}
         for name in sample_names:
-            file_path = os.path.join(self.data_folder, f"{name}.csv")
-            df = pd.read_csv(file_path)
-            if not expected_cols.issubset(df.columns):
-                raise ValueError(
-                    f"CSV file '{file_path}' must contain columns: {expected_cols}"
-                )
+            file_path = os.path.join(self.data_folder, f"{name}.json")
+            with open(file_path, "r", encoding="utf-8") as f:
+                data = json.load(f)
+            df = pd.DataFrame(data)
             df['label'] = df['label'].apply(
                 lambda x: 0 if str(x).lower() == "irrelevant" else 1
             )
             dataframes.append(df)
-        if len(dataframes) > 1:
-            data = pd.concat(dataframes, ignore_index=True)
-        else:
-            data = dataframes[0]
-        return data
+        return dataframes
 
-    
+
     def _benchmark_retriever(self):
-        
-        data = self._load_data(self.samples.get('G'))
-        
+
+        data = self._load(self.samples.get('G'))
+
         positive_map = defaultdict(set)
         for _, row in data.iterrows():
             if row['label'] == 1:
                 positive_map[row['sentence1']].add(row['sentence2'])
-                
+
         queries = list(data['sentence1'].unique())
         candidates = data['sentence2'].tolist()
 
@@ -118,29 +113,27 @@ class BenchmarkRunner:
             total_negative = len(negative_queries)
             false_positive_rate = (negative_false_positives / total_negative
                                    if total_negative > 0 else None)
-            
+
             print(f"Retrieval (k={k}, threshold={threshold}): "
                   f"Recall@{k}: {recall_at_k:.4f}, FPR: {false_positive_rate:.4f}")
 
             # TODO: Implement file logging 
 
-    
+
     def _benchmark_reranker(self, reranker, data):
         reranking = Reranking(reranker, data)
         reports = []
-        for config in self.reranker_configs:
-            threshold = config.get("threshold")
-            preds = reranking.predict(threshold)
-            report_str = classification_report(data['label'], preds)
-            print(f"Reranker (threshold={threshold}):\n{report_str}")
-            
+        preds = reranking.predict()
+        report_str = classification_report(data['label'], preds)
+        print(f"Reranker\n{report_str}")
+
         # TODO: Implement file logging 
 
-    
+
     def _benchmark_pipeline(self):
 
         # TODO: Implement logic 
-        
+
         reports = []
         for config in self.pipeline_configs:
             threshold = config.get("threshold")
