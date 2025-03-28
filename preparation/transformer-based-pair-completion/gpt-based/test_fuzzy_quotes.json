@@ -1,0 +1,102 @@
+[
+    {
+        "sentence1": "Unus enim erat qui ab eis expectabatur, quamuis multi essent Christi, qui et filii dei appellabantur.",
+        "sentence2": "Considerate, unum enim erat qui ab eis expectabatur, quamuis multi essent Christi, qui et filii dei appellabantur.",
+        "label": "fuzzy_quote"
+    },
+    {
+        "sentence1": "Ecce, inueniamus Messiam, quod est, si interpreteris, Christus, quod semper expectavimus.",
+        "sentence2": "Inueniamus Messiam, quod est, si interpreteris, Christus.",
+        "label": "fuzzy_quote"
+    },
+    {
+        "sentence1": "Hac ratione, neque ibis ad habitationem eius, hoc est non peruenies ad illuminationem diuinae scientiae, quae est summa sapientia.",
+        "sentence2": "neque ibis ad habitationem eius, hoc est non peruenies ad illuminationem diuinae scientiae.",
+        "label": "fuzzy_quote"
+    },
+    {
+        "sentence1": "Nam quia prophetiae non sunt minimum signorum, immo plurimum hominibus persuadent, praedicit de Petro",
+        "sentence2": "Propterea quod nam quia prophetiae non sunt minimum signorum, immo plurimum hominibus persuadent, praedicit de Petro, cras feretur res magis miranda.",
+        "label": "fuzzy_quote"
+    },
+    {
+        "sentence1": "Praeterea, et ita duci ad Iesum non leuis, sed studiosae mentis indicium erat, ut melius intelligas.",
+        "sentence2": "et ita duci ad Iesum non leuis, sed studiosae mentis indicium erat.",
+        "label": "fuzzy_quote"
+    },
+    {
+        "sentence1": "Tu es Simon filius Iona, tu uocaberis Cephas, quod interpretari licet Petrus. Andreae quidem nomen profert nobis, sed non alterius.",
+        "sentence2": "Tu es Simon filius Iona, tu uocaberis Cephas, quod interpretari licet Petrus. Andreae quidem nomen profert nobis, sed non alterius, quod significat insitam fiduciam et missionem.",
+        "label": "fuzzy_quote"
+    },
+    {
+        "sentence1": "Nisi enim per bonam operationem secutus fueris Iesum, non peruenies ad contemplationem faciei domini",
+        "sentence2": "Nisi enim per bonam operationem secutus fueris Iesum, non peruenies ad contemplationem faciei domini, et tantum labor tuus vanus erit.",
+        "label": "fuzzy_quote"
+    },
+    {
+        "sentence1": "Quidam autem dicunt illum esse Ioannem, qui haec scribit, sed alii hunc opinantur discipulum quem Iesus diligebat, ita narratio ambigua manet.",
+        "sentence2": "quidam autem dicunt illum esse Ioannem, qui haec scribit.",
+        "label": "fuzzy_quote"
+    },
+    {
+        "sentence1": "Non enim simpliciter recepit sermonem Andreae, sed uoluit uidere et Christum",
+        "sentence2": "Non enim simpliciter recepit sermonem Andreae, sed uoluit uidere et Christum, ut fides eius ex auditu ad visionem perduceretur.",
+        "label": "fuzzy_quote"
+    },
+    {
+        "sentence1": "Adduxit autem illum ad Iesum, non quod tam leuibus esset moribus, et ad omnem sermonem circumferretur sed quod feruenti et bono animo susceperat sermones, quos ei dixerat frater de Christo.",
+        "sentence2": "Adduxit autem illum ad Iesum, non quod tam leuibus esset moribus, et ad omnem sermonem circumferretur, sed quod feruenti et bono animo susceperat sermones, quos ei dixerat frater de Christo, testans summam devotionis.",
+        "label": "fuzzy_quote"
+    },
+    {
+        "sentence1": "Et uerisimile est, quod multo tempore desiderarint, et meditati fuerint quaerere illum.",
+        "sentence2": "Et uerisimile est, quod multo tempore desiderarint, et meditati fuerint quaerere illum, necnon maximi duxerint eius praesentiam adipisci.",
+        "label": "fuzzy_quote"
+    },
+    {
+        "sentence1": "Caeterum Andreae mentionem facit, quia et insignior erat, et adducebat suum fratrem, quod sine dubio magnam fidem ostendebat.",
+        "sentence2": "Caeterum Andreae mentionem facit, quia et insignior erat, et adducebat suum fratrem.",
+        "label": "fuzzy_quote"
+    },
+    {
+        "sentence1": "Nonnulli autem aiunt, quod non fuerit ex nobilioribus aliquis; praeterea nulla utilitas fuerat etiam scire nomen, adeo ut ipsa res potius quam nomen conspectu digna esset.",
+        "sentence2": "Nonnulli autem aiunt, quod non fuerit ex nobilioribus aliquis, Praeterea nulla utilitas fuerat etiam scire nomen.",
+        "label": "fuzzy_quote"
+    },
+    {
+        "sentence1": "Quod si perseuerat quis arguendo facilitatem Petri, discat et hoc non esse scriptum quod crediderit statim Andreae, sed quod Andreas duxerit illum ad Iesum",
+        "sentence2": "Quod si perseuerat quis arguendo facilitatem Petri, discat et hoc non esse scriptum quod crediderit statim Andreae, sed quod Andreas duxerit illum ad Iesum, eo modo fidem aliorum corroborans.",
+        "label": "fuzzy_quote"
+    },
+    {
+        "sentence1": "Erat autem Andreas frater Simonis Petri, unus ex duobus qui audierant a Ioanne et secuti fuerunt illum, demonstrans iniitium ecclesiae natalem.",
+        "sentence2": "Erat autem Andreas frater Simonis Petri, unus ex duobus qui audierant a Ioanne et secuti fuerunt illum",
+        "label": "fuzzy_quote"
+    },
+    {
+        "sentence1": "lucem enim inquit, habitat in accessam, Propterea nisi quis seipsum purificauerit, et per purificationem secutus fuerit, quomodo scientia illustrabitur",
+        "sentence2": "Considerandum est igitur lucem enim, inquit, habitat inaccessam. Propterea nisi quis seipsum purificaverit, et per purificationem secutus fuerit, quomodo scientia illustrabitur?",
+        "label": "fuzzy_quote"
+    },
+    {
+        "sentence1": "Uide autem obsecro, quantum amauerit fratrem, et quomodo non occultauerit ab eo bonum sed communicarit ei thesaurum, emiseritque iucunditatis uocem, Inuenimus, dicens.",
+        "sentence2": "Miris modis uide autem obsecro, quantum amauerit fratrem, et quomodo non occultauerit ab eo bonum sed communicarit ei thesaurum, emiseritque iucunditatis uocem, Inuenimus, dicens.",
+        "label": "fuzzy_quote"
+    },
+    {
+        "sentence1": "Nam cum quod praesens est dicitur, etiam futurum credibile fit",
+        "sentence2": "Explicandum est ita ut nam cum quod praesens est dicitur, etiam futurum credibile fit.",
+        "label": "fuzzy_quote"
+    },
+    {
+        "sentence1": "quod magis solidae mentis fuerit, et non quouis uento circumactae.",
+        "sentence2": "Vere considerandum est quod magis solidae mentis fuerit, et non quovis vento circumactae.",
+        "label": "fuzzy_quote"
+    },
+    {
+        "sentence1": "Videndum est enim uerisimile enim est, quod Andreas plura dixerit ei, et manifeste annunciauerit de Christo utpote edoctus secretiora quaedam, eo quod manserat apud Christum.",
+        "sentence2": "Uerisimile enim est, quod Andreas plura dixerit ei, et manifeste annunciauerit de Christo utpote edoctus secretiora quaedam, eo quod manserat apud Christum.",
+        "label": "fuzzy_quote"
+    }
+]
