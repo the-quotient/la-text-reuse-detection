@@ -43,6 +43,7 @@ def set_seed(seed: int = 42):
 
 
 def setup_logging(log_file, rank):
+    os.makedirs(os.path.dirname(log_file), exist_ok=True)
     if rank == 0:
         logging.basicConfig(
             filename=log_file,
@@ -55,7 +56,7 @@ def setup_logging(log_file, rank):
     return logging.getLogger(__name__)
 
 
-def prepare_data(data_file, ce_label, logger):
+def load(data_file, ce_label):
     with open(data_file, "r", encoding="utf-8") as f:
         data = json.load(f)
     all_samples = []
@@ -73,19 +74,11 @@ def prepare_data(data_file, ce_label, logger):
     return all_samples[:split_index], all_samples[split_index:]
 
 
-def train_cross_encoder(args, ce_label, rank, logger):
+def train_cross_encoder(args, ce_label, rank, device, logger):
 
     num_labels = 2
-
-    train_samples, dev_samples = prepare_data(
-        args.data_file, ce_label, logger
-    )
-
-    device = torch.device(
-        f"cuda:{rank}" if torch.cuda.is_available() else "cpu"
-    )
+    train_samples, dev_samples = load(args.data_file, ce_label)
     logger.info(f"[Rank {rank}] Using device {device}")
-
     loss_function = torch.nn.CrossEntropyLoss()
 
     model = CrossEncoder(
@@ -97,8 +90,6 @@ def train_cross_encoder(args, ce_label, rank, logger):
 
     if dist.is_initialized():
         model.model = DDP(model.model, device_ids=[rank])
-
-    if dist.is_initialized():
         train_sampler = DistributedSampler(
             train_samples,
             num_replicas=dist.get_world_size(),
@@ -124,11 +115,11 @@ def train_cross_encoder(args, ce_label, rank, logger):
     train_steps_per_epoch = len(train_dataloader)
     total_steps = train_steps_per_epoch * args.num_epochs
     total_warmup_steps = int(0.1 * total_steps)
-    warmup_per_epoch = total_warmup_steps // args.num_epochs
+    warmup_per_epoch = int(total_warmup_steps / args.num_epochs)
 
     output_path = os.path.join(
         args.output_base_path,
-        f"CE{args.label.upper()}-{args.version}"
+        f"CE{args.label.upper()}{args.version}"
     )
 
     for epoch in range(args.num_epochs):
@@ -174,16 +165,13 @@ def main():
     set_seed(42)
 
     local_rank = int(os.environ.get("LOCAL_RANK", -1))
-    device = torch.device(
-        f"cuda:{local_rank}" if (local_rank >= 0 and torch.cuda.is_available())
-        else "cpu"
-    )
-
-    if local_rank >= 0:
+    if local_rank >= 0 and torch.cuda.is_available():
+        device = torch.device(f"cuda:{local_rank}")
         torch.cuda.set_device(local_rank)
         dist.init_process_group(backend="nccl", init_method="env://")
         rank = dist.get_rank()
     else:
+        device = torch.device("cpu")
         rank = 0
 
     if args.label == "p":
@@ -193,10 +181,10 @@ def main():
     else:
         raise ValueError("Only p for paraphrase and s for similar_sentences supported.")
 
-    logger = setup_logging(f"logs/CE{args.label.upper()}-{args.version}.log", rank)
+    logger = setup_logging(f"logs/CE{args.label.upper()}.log", rank)
     logger.info("Starting training...")
 
-    train_cross_encoder(args, ce_label, rank, logger)
+    train_cross_encoder(args, ce_label, rank, device, logger)
 
     if local_rank >= 0:
         dist.barrier()

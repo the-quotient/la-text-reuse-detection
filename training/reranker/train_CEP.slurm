@@ -1,26 +1,27 @@
 #!/bin/bash
 
-#SBATCH --job-name=TEST-CE
-#SBATCH --output=logs/TEST-CE_%j.out
-#SBATCH --error=logs/TEST-CE_%j.err
+#SBATCH --job-name="CEP"
+#SBATCH --output=logs/CEP_%j.out
+#SBATCH --error=logs/CEP_%j.err
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=p_krae02@uni-muenster.de
 
-#SBATCH --partition=gpuexpress
+#SBATCH --partition=gpu4090,gpu3090,gpu2080
 #SBATCH --nodes=1
-#SBATCH --ntasks-per-node=2
+#SBATCH --ntasks-per-node=6
 #SBATCH --cpus-per-task=4
-#SBATCH --gres=gpu:2
-#SBATCH --time=0-00:10:00
+#SBATCH --mem=64G
+#SBATCH --gres=gpu:6
+#SBATCH --time=1-00:00:00
 
 
 MODEL_PATH="$WORK/models/CE-MLM/"
-DATA_FILE="$WORK/data/test/test_training.json"
-OUTPUT_DIR="$WORK/models/tests"
+DATA_FILE="$WORK/data/reranker_p/training_reranker_p.json"
+OUTPUT_DIR="$WORK/models/"
 LABEL="p"
 
 SEQ_LENGTH=128
-BATCH_SIZE=16
+BATCH_SIZE=32
 EPOCHS=5
 
 
@@ -30,7 +31,7 @@ module load palma/2020a
 export LD_LIBRARY_PATH=/usr/lib:/usr/lib64:$LD_LIBRARY_PATH
 export OMP_NUM_THREADS=6
 
-torchrun --nproc_per_node=2 train_reranker.py \
+torchrun --nproc_per_node=6 train_reranker.py \
     --pretrained_model_path "$MODEL_PATH" \
     --data_file "$DATA_FILE" \
     --output_base_path "$OUTPUT_DIR" \
@@ -39,4 +40,3 @@ torchrun --nproc_per_node=2 train_reranker.py \
     --train_batch_size $BATCH_SIZE \
     --num_epochs $EPOCHS \
     --max_seq_length $SEQ_LENGTH
-
