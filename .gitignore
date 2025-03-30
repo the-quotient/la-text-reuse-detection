@@ -54,7 +54,7 @@ venv/
 # ----------------------
 # Experiment Results
 # ----------------------
-/results/raw/*
+/results/*
 
 # ----------------------
 # Dependencies
