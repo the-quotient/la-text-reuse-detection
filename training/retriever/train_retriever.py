@@ -59,12 +59,14 @@ def main():
     loss_function = losses.TripletLoss(model=model, triplet_margin=args.triplet_margin)
 
     training_args = SentenceTransformerTrainingArguments(
-        output_dir=os.path.join(args.output_base_path, f"BiEncoder{args.version}"),
+        output_dir=os.path.join(args.output_base_path, f"BE{args.version}"),
         num_train_epochs=args.num_epochs,
         per_device_train_batch_size=args.train_batch_size,
         warmup_ratio=0.1,
         fp16=True,
-        dataloader_drop_last=True
+        dataloader_drop_last=True,
+        logging_strategy="epoch",
+        save_strategy="no"
     )
 
     trainer = SentenceTransformerTrainer(
@@ -75,6 +77,7 @@ def main():
     )
 
     trainer.train()
+    trainer.save_model()
 
 
 if __name__ == "__main__":
