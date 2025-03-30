@@ -1,0 +1,56 @@
+[
+  {
+    "dataset": "SGSH",
+    "model": "BEmargin_7_0",
+    "results": [
+      {
+        "k": 5,
+        "threshold": 0.65,
+        "recall@k": 0.98,
+        "false_positive_rate": 0.2988,
+        "precision@k": 0.8105,
+        "f1@k": 0.857
+      },
+      {
+        "k": 5,
+        "threshold": 0.66,
+        "recall@k": 0.975,
+        "false_positive_rate": 0.265,
+        "precision@k": 0.8237,
+        "f1@k": 0.8663
+      },
+      {
+        "k": 5,
+        "threshold": 0.67,
+        "recall@k": 0.97,
+        "false_positive_rate": 0.2313,
+        "precision@k": 0.8429,
+        "f1@k": 0.8792
+      },
+      {
+        "k": 5,
+        "threshold": 0.68,
+        "recall@k": 0.95,
+        "false_positive_rate": 0.1975,
+        "precision@k": 0.8473,
+        "f1@k": 0.8773
+      },
+      {
+        "k": 5,
+        "threshold": 0.69,
+        "recall@k": 0.94,
+        "false_positive_rate": 0.165,
+        "precision@k": 0.8473,
+        "f1@k": 0.8758
+      },
+      {
+        "k": 5,
+        "threshold": 0.7,
+        "recall@k": 0.935,
+        "false_positive_rate": 0.1437,
+        "precision@k": 0.8598,
+        "f1@k": 0.8825
+      }
+    ]
+  }
+]

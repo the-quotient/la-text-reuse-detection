@@ -1,0 +1,232 @@
+[
+  {
+    "dataset": "SGSH",
+    "model": "BEmargin_6_0",
+    "results": [
+      {
+        "k": 5,
+        "threshold": 0.6,
+        "recall@k": 0.98,
+        "false_positive_rate": 0.3575,
+        "precision@k": 0.7496,
+        "f1@k": 0.8148
+      },
+      {
+        "k": 5,
+        "threshold": 0.65,
+        "recall@k": 0.945,
+        "false_positive_rate": 0.1913,
+        "precision@k": 0.8378,
+        "f1@k": 0.8707
+      },
+      {
+        "k": 5,
+        "threshold": 0.7,
+        "recall@k": 0.91,
+        "false_positive_rate": 0.0825,
+        "precision@k": 0.8685,
+        "f1@k": 0.8823
+      },
+      {
+        "k": 5,
+        "threshold": 0.75,
+        "recall@k": 0.84,
+        "false_positive_rate": 0.0312,
+        "precision@k": 0.8279,
+        "f1@k": 0.8328
+      },
+      {
+        "k": 5,
+        "threshold": 0.8,
+        "recall@k": 0.755,
+        "false_positive_rate": 0.01,
+        "precision@k": 0.7492,
+        "f1@k": 0.7525
+      }
+    ]
+  },
+  {
+    "dataset": "SGSH",
+    "model": "BEmargin_7_0",
+    "results": [
+      {
+        "k": 5,
+        "threshold": 0.6,
+        "recall@k": 0.99,
+        "false_positive_rate": 0.5312,
+        "precision@k": 0.6619,
+        "f1@k": 0.7485
+      },
+      {
+        "k": 5,
+        "threshold": 0.65,
+        "recall@k": 0.98,
+        "false_positive_rate": 0.2988,
+        "precision@k": 0.8105,
+        "f1@k": 0.857
+      },
+      {
+        "k": 5,
+        "threshold": 0.7,
+        "recall@k": 0.935,
+        "false_positive_rate": 0.1437,
+        "precision@k": 0.8598,
+        "f1@k": 0.8825
+      },
+      {
+        "k": 5,
+        "threshold": 0.75,
+        "recall@k": 0.875,
+        "false_positive_rate": 0.0712,
+        "precision@k": 0.8422,
+        "f1@k": 0.8537
+      },
+      {
+        "k": 5,
+        "threshold": 0.8,
+        "recall@k": 0.81,
+        "false_positive_rate": 0.0175,
+        "precision@k": 0.8008,
+        "f1@k": 0.805
+      }
+    ]
+  },
+  {
+    "dataset": "SGSH",
+    "model": "BEmargin_8_0",
+    "results": [
+      {
+        "k": 5,
+        "threshold": 0.6,
+        "recall@k": 0.995,
+        "false_positive_rate": 0.7238,
+        "precision@k": 0.5342,
+        "f1@k": 0.644
+      },
+      {
+        "k": 5,
+        "threshold": 0.65,
+        "recall@k": 0.975,
+        "false_positive_rate": 0.4675,
+        "precision@k": 0.6893,
+        "f1@k": 0.7685
+      },
+      {
+        "k": 5,
+        "threshold": 0.7,
+        "recall@k": 0.95,
+        "false_positive_rate": 0.2462,
+        "precision@k": 0.802,
+        "f1@k": 0.8463
+      },
+      {
+        "k": 5,
+        "threshold": 0.75,
+        "recall@k": 0.91,
+        "false_positive_rate": 0.1,
+        "precision@k": 0.847,
+        "f1@k": 0.8675
+      },
+      {
+        "k": 5,
+        "threshold": 0.8,
+        "recall@k": 0.86,
+        "false_positive_rate": 0.0375,
+        "precision@k": 0.8429,
+        "f1@k": 0.8495
+      }
+    ]
+  },
+  {
+    "dataset": "SGSH",
+    "model": "BEmargin_9_0",
+    "results": [
+      {
+        "k": 5,
+        "threshold": 0.6,
+        "recall@k": 0.99,
+        "false_positive_rate": 0.8413,
+        "precision@k": 0.4012,
+        "f1@k": 0.5262
+      },
+      {
+        "k": 5,
+        "threshold": 0.65,
+        "recall@k": 0.99,
+        "false_positive_rate": 0.62,
+        "precision@k": 0.6008,
+        "f1@k": 0.6978
+      },
+      {
+        "k": 5,
+        "threshold": 0.7,
+        "recall@k": 0.975,
+        "false_positive_rate": 0.385,
+        "precision@k": 0.7515,
+        "f1@k": 0.8142
+      },
+      {
+        "k": 5,
+        "threshold": 0.75,
+        "recall@k": 0.925,
+        "false_positive_rate": 0.1862,
+        "precision@k": 0.8226,
+        "f1@k": 0.8543
+      },
+      {
+        "k": 5,
+        "threshold": 0.8,
+        "recall@k": 0.86,
+        "false_positive_rate": 0.0712,
+        "precision@k": 0.8217,
+        "f1@k": 0.8348
+      }
+    ]
+  },
+  {
+    "dataset": "SGSH",
+    "model": "BEmargin_10_0",
+    "results": [
+      {
+        "k": 5,
+        "threshold": 0.6,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.9513,
+        "precision@k": 0.3086,
+        "f1@k": 0.4433
+      },
+      {
+        "k": 5,
+        "threshold": 0.65,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.8037,
+        "precision@k": 0.4723,
+        "f1@k": 0.5923
+      },
+      {
+        "k": 5,
+        "threshold": 0.7,
+        "recall@k": 0.97,
+        "false_positive_rate": 0.5525,
+        "precision@k": 0.657,
+        "f1@k": 0.7407
+      },
+      {
+        "k": 5,
+        "threshold": 0.75,
+        "recall@k": 0.925,
+        "false_positive_rate": 0.3038,
+        "precision@k": 0.7515,
+        "f1@k": 0.8015
+      },
+      {
+        "k": 5,
+        "threshold": 0.8,
+        "recall@k": 0.89,
+        "false_positive_rate": 0.1237,
+        "precision@k": 0.8268,
+        "f1@k": 0.8463
+      }
+    ]
+  }
+]
