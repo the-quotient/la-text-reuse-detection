@@ -1,195 +1,75 @@
-import os
-import random
-import logging
 import argparse
-import json
-from datetime import datetime
-from collections import Counter
-
-import numpy as np
 import torch
-import torch.distributed as dist
-from torch.nn.parallel import DistributedDataParallel as DDP
-from torch.utils.data import DataLoader
-from torch.utils.data.distributed import DistributedSampler
-from datasets import Dataset
-
+from datasets import load_dataset
 from sentence_transformers import (
-    SentenceTransformer,
     CrossEncoder,
-    losses,
-    InputExample,
+    CrossEncoderTrainer,
+    CrossEncoderTrainingArguments,
 )
-from sentence_transformers.models import Transformer, Pooling
-from sentence_transformers.cross_encoder.evaluation import (
-    CEF1Evaluator
-)
-from sentence_transformers.evaluation import (
-    EmbeddingSimilarityEvaluator,
-    SequentialEvaluator
-)
-from sentence_transformers.trainer import SentenceTransformerTrainer
-from sentence_transformers.training_args import SentenceTransformerTrainingArguments
-
-from transformers import AutoTokenizer
-
-
-def set_seed(seed: int = 42):
-    random.seed(seed)
-    np.random.seed(seed)
-    torch.manual_seed(seed)
-    if torch.cuda.is_available():
-        torch.cuda.manual_seed_all(seed)
-
-
-def setup_logging(log_file, rank):
-    os.makedirs(os.path.dirname(log_file), exist_ok=True)
-    if rank == 0:
-        logging.basicConfig(
-            filename=log_file,
-            format="%(asctime)s - %(message)s",
-            datefmt="%Y-%m-%d %H:%M:%S",
-            level=logging.INFO,
-        )
-    else:
-        logging.basicConfig(level=logging.ERROR)
-    return logging.getLogger(__name__)
-
-
-def load(data_file, ce_label):
-    with open(data_file, "r", encoding="utf-8") as f:
-        data = json.load(f)
-    all_samples = []
-    for i, entry in enumerate(data):
-        sentence1 = entry["sentence1"]
-        sentence2 = entry["sentence2"]
-        raw_label = entry["label"]
-        mapped_label = 1 if raw_label.lower() == ce_label else 0
-        all_samples.append(
-            InputExample(guid=str(i), texts=[sentence1, sentence2], 
-                         label=mapped_label)
-        )
-    random.shuffle(all_samples)
-    split_index = int(0.9 * len(all_samples))
-    return all_samples[:split_index], all_samples[split_index:]
-
-
-def train_cross_encoder(args, ce_label, rank, device, logger):
-
-    num_labels = 2
-    train_samples, dev_samples = load(args.data_file, ce_label)
-    logger.info(f"[Rank {rank}] Using device {device}")
-    loss_function = torch.nn.CrossEntropyLoss()
-
-    model = CrossEncoder(
-        args.pretrained_model_path,
-        num_labels=num_labels,
-        device=device,
-        max_length=args.max_seq_length
-    )
-
-    if dist.is_initialized():
-        model.model = DDP(model.model, device_ids=[rank])
-        train_sampler = DistributedSampler(
-            train_samples,
-            num_replicas=dist.get_world_size(),
-            rank=dist.get_rank(),
-            shuffle=True
-        )
-        train_dataloader = DataLoader(
-            train_samples,
-            batch_size=args.train_batch_size,
-            sampler=train_sampler
-        )
-    else:
-        train_dataloader = DataLoader(
-            train_samples,
-            batch_size=args.train_batch_size,
-            shuffle=True
-        )
-
-    dev_f1_evaluator = CEF1Evaluator.from_input_examples(
-        dev_samples, name="dev-f1"
-    )
-
-    train_steps_per_epoch = len(train_dataloader)
-    total_steps = train_steps_per_epoch * args.num_epochs
-    total_warmup_steps = int(0.1 * total_steps)
-    warmup_per_epoch = int(total_warmup_steps / args.num_epochs)
-
-    output_path = os.path.join(
-        args.output_base_path,
-        f"CE{args.label.upper()}{args.version}"
-    )
-
-    for epoch in range(args.num_epochs):
-        if dist.is_initialized():
-            train_dataloader.sampler.set_epoch(epoch)
-
-        model.fit(
-            train_dataloader=train_dataloader,
-            evaluator=dev_f1_evaluator,
-            epochs=1,
-            warmup_steps=warmup_per_epoch,
-            output_path=None,
-            loss_fct=loss_function,
-            use_amp=True
-        )
-        if rank == 0:
-            logger.info(f"Finished epoch {epoch+1}/{args.num_epochs}")
-
-    if rank == 0:
-        if isinstance(model.model, DDP):
-            model.model.module.save_pretrained(output_path)
-        else:
-            model.model.save_pretrained(output_path)
-
-        tokenizer = AutoTokenizer.from_pretrained(args.pretrained_model_path)
-        tokenizer.save_pretrained(output_path)
-
-        logger.info(f"Final model and tokenizer saved to {output_path}")
+from sentence_transformers.cross_encoder.losses import BinaryCrossEntropyLoss
 
 
 def main():
+
     parser = argparse.ArgumentParser()
-    parser.add_argument("--pretrained_model_path", required=True)
-    parser.add_argument("--data_file", required=True)
-    parser.add_argument("--output_base_path", required=True)
-    parser.add_argument("--label", required=True)
-    parser.add_argument("--version", required=True)
-    parser.add_argument("--train_batch_size", type=int, required=True)
-    parser.add_argument("--num_epochs", type=int, required=True)
-    parser.add_argument("--max_seq_length", type=int, required=True)
+    parser.add_argument('--model_name', type=str)
+    parser.add_argument('--dataset_name', type=str)
+    parser.add_argument('--output_dir', type=str)
+    parser.add_argument('--epochs', type=int)
+    parser.add_argument('--batch_size', type=int)
+    parser.add_argument('--learning_rate', type=float, default=5e-5)
+    parser.add_argument('--pos_weight', type=float)
+    parser.add_argument('--label_mapping', choices=['s', 'p'])
+    parser.add_argument('--max_seq_length', type=int)
+    parser.add_argument('--fp16', action='store_true')
     args = parser.parse_args()
 
-    set_seed(42)
+    dataset = load_dataset("json", data_files=args.dataset_name)
 
-    local_rank = int(os.environ.get("LOCAL_RANK", -1))
-    if local_rank >= 0 and torch.cuda.is_available():
-        device = torch.device(f"cuda:{local_rank}")
-        torch.cuda.set_device(local_rank)
-        dist.init_process_group(backend="nccl", init_method="env://")
-        rank = dist.get_rank()
-    else:
-        device = torch.device("cpu")
-        rank = 0
+    def map_labels(ex):
+        target_label = 'similar_sentence' if args.label_mapping == "s" else 'paraphrase'
+        label = 1 if ex['label'] == target_label else 0
+        return {
+            'text1': ex['sentence1'],
+            'text2': ex['sentence2'],
+            'label': label
+        }
 
-    if args.label == "p":
-        ce_label = "paraphrase"
-    elif args.label == "s":
-        ce_label = "similar_sentence"
-    else:
-        raise ValueError("Only p for paraphrase and s for similar_sentences supported.")
+    train_samples = dataset['train'].map(map_labels)
+    train_samples = train_samples.remove_columns(
+        [col for col in train_samples.column_names if col not in {'text1', 'text2', 'label'}]
+    )
+    from collections import Counter
+    print(Counter(train_samples['label']))
+    pos_weight_tensor = torch.tensor([args.pos_weight]) if args.pos_weight else None
 
-    logger = setup_logging(f"logs/CE{args.label.upper()}.log", rank)
-    logger.info("Starting training...")
+    model = CrossEncoder(args.model_name, num_labels=1, max_length=args.max_seq_length)
+    loss_fn = BinaryCrossEntropyLoss(model=model, pos_weight=pos_weight_tensor)
 
-    train_cross_encoder(args, ce_label, rank, device, logger)
+    training_args = CrossEncoderTrainingArguments(
+        output_dir=args.output_dir,
+        num_train_epochs=args.epochs,
+        per_device_train_batch_size=args.batch_size,
+        eval_strategy='no',
+        save_strategy='no',
+        logging_strategy='epoch',
+        logging_dir='logs',
+        learning_rate=args.learning_rate,
+        fp16=args.fp16,
+        dataloader_drop_last=True,
+        dataloader_num_workers=4,
+    )
 
-    if local_rank >= 0:
-        dist.barrier()
-        dist.destroy_process_group()
+    trainer = CrossEncoderTrainer(
+        model=model,
+        args=training_args,
+        train_dataset=train_samples,
+        tokenizer=model.tokenizer,
+        loss=loss_fn,
+    )
 
+    trainer.train()
+    trainer.save_model()
 
 if __name__ == "__main__":
     main()
