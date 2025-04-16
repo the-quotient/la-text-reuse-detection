@@ -1,10 +1,10 @@
 import numpy as np
 import pandas as pd
 from sentence_transformers import CrossEncoder
-from tqdm import tqdm
+from tqdm.notebook import tqdm
 
 
-class Reranking:
+class Reranker:
 
     def __init__(self, model_name, data=None):
         self.reranker = CrossEncoder(
@@ -12,6 +12,7 @@ class Reranking:
             max_length=256
         )
         self.data = data
+
 
     def get_logits(self):
         sents1 = self.data['sentence1']
@@ -22,8 +23,10 @@ class Reranking:
             result.append(logits)
         return result
 
+
     def get_prediction(self, logits, threshold):
         return (np.array(logits).flatten() > threshold).astype(int).tolist()
+
 
     def predict(self, pairs, threshold):
         df = pd.DataFrame(pairs, columns=["sentence1", "sentence2"])

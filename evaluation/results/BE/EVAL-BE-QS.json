@@ -1,0 +1,3802 @@
+[
+  {
+    "dataset": "GeS_15.json",
+    "model": "BEmargin_10_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.007,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_30.json",
+    "model": "BEmargin_10_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_06.json",
+    "model": "BEmargin_10_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_41.json",
+    "model": "BEmargin_10_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_17.json",
+    "model": "BEmargin_10_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.01,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.009,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_08.json",
+    "model": "BEmargin_10_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_22.json",
+    "model": "BEmargin_10_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.009,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.009,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_35.json",
+    "model": "BEmargin_10_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.002,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_05.json",
+    "model": "BEmargin_10_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.009,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.009,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.007,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.007,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_19.json",
+    "model": "BEmargin_10_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_31.json",
+    "model": "BEmargin_10_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.007,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.007,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.007,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_45.json",
+    "model": "BEmargin_10_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.002,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.001,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.0,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_23.json",
+    "model": "BEmargin_10_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.01,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.01,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.007,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_34.json",
+    "model": "BEmargin_10_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.002,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_13.json",
+    "model": "BEmargin_10_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.007,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_07.json",
+    "model": "BEmargin_10_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.002,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.002,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_20.json",
+    "model": "BEmargin_10_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.007,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.007,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_11.json",
+    "model": "BEmargin_10_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.009,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.009,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.007,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_14.json",
+    "model": "BEmargin_10_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_36.json",
+    "model": "BEmargin_10_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.007,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_04.json",
+    "model": "BEmargin_10_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.011,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.01,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.009,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.009,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_42.json",
+    "model": "BEmargin_10_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.002,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_48.json",
+    "model": "BEmargin_10_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.0131,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.01,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.009,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.007,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_29.json",
+    "model": "BEmargin_10_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_28.json",
+    "model": "BEmargin_10_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_32.json",
+    "model": "BEmargin_10_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_00.json",
+    "model": "BEmargin_10_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.007,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.002,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.002,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_24.json",
+    "model": "BEmargin_10_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.011,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.009,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_01.json",
+    "model": "BEmargin_10_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.007,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_16.json",
+    "model": "BEmargin_10_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.012,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.009,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_49.json",
+    "model": "BEmargin_10_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_25.json",
+    "model": "BEmargin_10_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_37.json",
+    "model": "BEmargin_10_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.009,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_33.json",
+    "model": "BEmargin_10_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_27.json",
+    "model": "BEmargin_10_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.01,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.01,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.007,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_44.json",
+    "model": "BEmargin_10_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.007,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.007,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.007,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_46.json",
+    "model": "BEmargin_10_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.007,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_26.json",
+    "model": "BEmargin_10_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.007,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.007,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.007,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_21.json",
+    "model": "BEmargin_10_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.014,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.013,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_40.json",
+    "model": "BEmargin_10_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.007,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.007,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_10.json",
+    "model": "BEmargin_10_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.002,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_38.json",
+    "model": "BEmargin_10_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_09.json",
+    "model": "BEmargin_10_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.011,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.01,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.007,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_43.json",
+    "model": "BEmargin_10_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.002,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_18.json",
+    "model": "BEmargin_10_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.009,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.009,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_47.json",
+    "model": "BEmargin_10_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.01,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.007,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.007,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_02.json",
+    "model": "BEmargin_10_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_39.json",
+    "model": "BEmargin_10_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.01,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_12.json",
+    "model": "BEmargin_10_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_03.json",
+    "model": "BEmargin_10_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.007,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_15.json",
+    "model": "BEmargin_09_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_30.json",
+    "model": "BEmargin_09_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_06.json",
+    "model": "BEmargin_09_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_41.json",
+    "model": "BEmargin_09_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_17.json",
+    "model": "BEmargin_09_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_08.json",
+    "model": "BEmargin_09_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_22.json",
+    "model": "BEmargin_09_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.007,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_35.json",
+    "model": "BEmargin_09_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.002,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_05.json",
+    "model": "BEmargin_09_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.007,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.007,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_19.json",
+    "model": "BEmargin_09_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.002,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_31.json",
+    "model": "BEmargin_09_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.007,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.007,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.007,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_45.json",
+    "model": "BEmargin_09_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.001,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.001,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.001,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_23.json",
+    "model": "BEmargin_09_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.01,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.009,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.007,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_34.json",
+    "model": "BEmargin_09_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.002,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_13.json",
+    "model": "BEmargin_09_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_07.json",
+    "model": "BEmargin_09_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.002,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.002,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.002,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.002,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_20.json",
+    "model": "BEmargin_09_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.009,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.009,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.007,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.007,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_11.json",
+    "model": "BEmargin_09_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.007,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.007,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.007,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_14.json",
+    "model": "BEmargin_09_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_36.json",
+    "model": "BEmargin_09_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.007,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.002,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_04.json",
+    "model": "BEmargin_09_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.011,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.01,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.009,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_42.json",
+    "model": "BEmargin_09_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.002,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_48.json",
+    "model": "BEmargin_09_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.009,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.007,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_29.json",
+    "model": "BEmargin_09_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_28.json",
+    "model": "BEmargin_09_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_32.json",
+    "model": "BEmargin_09_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.007,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_00.json",
+    "model": "BEmargin_09_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.002,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_24.json",
+    "model": "BEmargin_09_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.01,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.009,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.009,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.007,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_01.json",
+    "model": "BEmargin_09_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.002,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_16.json",
+    "model": "BEmargin_09_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.009,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_49.json",
+    "model": "BEmargin_09_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_25.json",
+    "model": "BEmargin_09_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_37.json",
+    "model": "BEmargin_09_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.009,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.007,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_33.json",
+    "model": "BEmargin_09_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_27.json",
+    "model": "BEmargin_09_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.007,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_44.json",
+    "model": "BEmargin_09_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_46.json",
+    "model": "BEmargin_09_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.007,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_26.json",
+    "model": "BEmargin_09_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.007,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_21.json",
+    "model": "BEmargin_09_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.012,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.007,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_40.json",
+    "model": "BEmargin_09_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_10.json",
+    "model": "BEmargin_09_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.002,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_38.json",
+    "model": "BEmargin_09_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_09.json",
+    "model": "BEmargin_09_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.009,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.007,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.007,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_43.json",
+    "model": "BEmargin_09_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.002,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.001,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_18.json",
+    "model": "BEmargin_09_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.009,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.009,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_47.json",
+    "model": "BEmargin_09_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.007,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.007,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_02.json",
+    "model": "BEmargin_09_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_39.json",
+    "model": "BEmargin_09_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_12.json",
+    "model": "BEmargin_09_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeS_03.json",
+    "model": "BEmargin_09_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.009,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.007,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.007,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  }
+]

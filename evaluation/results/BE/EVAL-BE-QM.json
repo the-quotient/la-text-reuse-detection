@@ -1,0 +1,3422 @@
+[
+  {
+    "dataset": "GeM_03.json",
+    "model": "BEmargin_10_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_06.json",
+    "model": "BEmargin_10_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_02.json",
+    "model": "BEmargin_10_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_04.json",
+    "model": "BEmargin_10_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.01,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.01,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.01,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.009,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_01.json",
+    "model": "BEmargin_10_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 0.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 0.0,
+        "f1@k": 0.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_00.json",
+    "model": "BEmargin_10_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 0.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 0.0,
+        "f1@k": 0.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 0.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 0.0,
+        "f1@k": 0.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 0.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 0.0,
+        "f1@k": 0.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_05.json",
+    "model": "BEmargin_10_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.007,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_09.json",
+    "model": "BEmargin_10_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_08.json",
+    "model": "BEmargin_10_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.0101,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.009,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_07.json",
+    "model": "BEmargin_10_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.002,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.002,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.002,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.001,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_03.json",
+    "model": "BEmargin_09_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.007,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_06.json",
+    "model": "BEmargin_09_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.002,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.002,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_02.json",
+    "model": "BEmargin_09_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_04.json",
+    "model": "BEmargin_09_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.011,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.01,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.01,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.009,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_01.json",
+    "model": "BEmargin_09_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 0.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 0.0,
+        "f1@k": 0.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 0.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 0.0,
+        "f1@k": 0.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 0.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 0.0,
+        "f1@k": 0.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_00.json",
+    "model": "BEmargin_09_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 0.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 0.0,
+        "f1@k": 0.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 0.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 0.0,
+        "f1@k": 0.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 0.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 0.0,
+        "f1@k": 0.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 0.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 0.0,
+        "f1@k": 0.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_05.json",
+    "model": "BEmargin_09_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_09.json",
+    "model": "BEmargin_09_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_08.json",
+    "model": "BEmargin_09_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.0101,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.009,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_07.json",
+    "model": "BEmargin_09_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.002,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.002,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.001,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_03.json",
+    "model": "BEmargin_03_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_06.json",
+    "model": "BEmargin_03_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.002,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.002,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.002,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.002,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_02.json",
+    "model": "BEmargin_03_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_04.json",
+    "model": "BEmargin_03_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.01,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.01,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.01,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_01.json",
+    "model": "BEmargin_03_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 0.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 0.0,
+        "f1@k": 0.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 0.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 0.0,
+        "f1@k": 0.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 0.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 0.0,
+        "f1@k": 0.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 0.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 0.0,
+        "f1@k": 0.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_00.json",
+    "model": "BEmargin_03_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 0.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 0.0,
+        "f1@k": 0.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 0.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 0.0,
+        "f1@k": 0.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 0.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 0.0,
+        "f1@k": 0.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 0.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 0.0,
+        "f1@k": 0.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_05.json",
+    "model": "BEmargin_03_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_09.json",
+    "model": "BEmargin_03_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_08.json",
+    "model": "BEmargin_03_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_07.json",
+    "model": "BEmargin_03_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.001,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.001,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.001,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 0.0,
+        "false_positive_rate": 0.001,
+        "precision@k": 0.0,
+        "f1@k": 0.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_03.json",
+    "model": "BEmargin_06_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_06.json",
+    "model": "BEmargin_06_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.002,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.002,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.002,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.002,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_02.json",
+    "model": "BEmargin_06_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_04.json",
+    "model": "BEmargin_06_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.01,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.01,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.01,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_01.json",
+    "model": "BEmargin_06_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 0.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 0.0,
+        "f1@k": 0.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 0.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 0.0,
+        "f1@k": 0.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 0.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 0.0,
+        "f1@k": 0.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 0.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 0.0,
+        "f1@k": 0.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_00.json",
+    "model": "BEmargin_06_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 0.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 0.0,
+        "f1@k": 0.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 0.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 0.0,
+        "f1@k": 0.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_05.json",
+    "model": "BEmargin_06_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_09.json",
+    "model": "BEmargin_06_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_08.json",
+    "model": "BEmargin_06_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_07.json",
+    "model": "BEmargin_06_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.001,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.001,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.001,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.001,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_03.json",
+    "model": "SPhilBERTa",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_06.json",
+    "model": "SPhilBERTa",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.002,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.002,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_02.json",
+    "model": "SPhilBERTa",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_04.json",
+    "model": "SPhilBERTa",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.01,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.01,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.01,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_01.json",
+    "model": "SPhilBERTa",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 0.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 0.0,
+        "f1@k": 0.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 0.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 0.0,
+        "f1@k": 0.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 0.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 0.0,
+        "f1@k": 0.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 0.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 0.0,
+        "f1@k": 0.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_00.json",
+    "model": "SPhilBERTa",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_05.json",
+    "model": "SPhilBERTa",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_09.json",
+    "model": "SPhilBERTa",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_08.json",
+    "model": "SPhilBERTa",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.009,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_07.json",
+    "model": "SPhilBERTa",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.001,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.001,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_03.json",
+    "model": "BEmargin_07_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_06.json",
+    "model": "BEmargin_07_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.002,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_02.json",
+    "model": "BEmargin_07_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_04.json",
+    "model": "BEmargin_07_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.01,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.01,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.01,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.009,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_01.json",
+    "model": "BEmargin_07_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 0.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 0.0,
+        "f1@k": 0.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 0.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 0.0,
+        "f1@k": 0.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 0.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 0.0,
+        "f1@k": 0.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 0.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 0.0,
+        "f1@k": 0.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_00.json",
+    "model": "BEmargin_07_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 0.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 0.0,
+        "f1@k": 0.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 0.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 0.0,
+        "f1@k": 0.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 0.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 0.0,
+        "f1@k": 0.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_05.json",
+    "model": "BEmargin_07_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_09.json",
+    "model": "BEmargin_07_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_08.json",
+    "model": "BEmargin_07_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.009,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_07.json",
+    "model": "BEmargin_07_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.002,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.002,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.001,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.001,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_03.json",
+    "model": "BEmargin_05_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_06.json",
+    "model": "BEmargin_05_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.002,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.002,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_02.json",
+    "model": "BEmargin_05_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_04.json",
+    "model": "BEmargin_05_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.01,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.01,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.01,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_01.json",
+    "model": "BEmargin_05_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 0.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 0.0,
+        "f1@k": 0.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 0.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 0.0,
+        "f1@k": 0.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 0.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 0.0,
+        "f1@k": 0.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 0.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 0.0,
+        "f1@k": 0.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_00.json",
+    "model": "BEmargin_05_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 0.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 0.0,
+        "f1@k": 0.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 0.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 0.0,
+        "f1@k": 0.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_05.json",
+    "model": "BEmargin_05_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_09.json",
+    "model": "BEmargin_05_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_08.json",
+    "model": "BEmargin_05_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_07.json",
+    "model": "BEmargin_05_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.001,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.001,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.001,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.001,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_03.json",
+    "model": "BEmargin_08_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_06.json",
+    "model": "BEmargin_08_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.002,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.002,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_02.json",
+    "model": "BEmargin_08_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_04.json",
+    "model": "BEmargin_08_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.009,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.009,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.009,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.009,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_01.json",
+    "model": "BEmargin_08_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 0.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 0.0,
+        "f1@k": 0.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 0.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 0.0,
+        "f1@k": 0.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 0.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 0.0,
+        "f1@k": 0.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 0.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 0.0,
+        "f1@k": 0.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_00.json",
+    "model": "BEmargin_08_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 0.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 0.0,
+        "f1@k": 0.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 0.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 0.0,
+        "f1@k": 0.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_05.json",
+    "model": "BEmargin_08_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_09.json",
+    "model": "BEmargin_08_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_08.json",
+    "model": "BEmargin_08_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.009,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_07.json",
+    "model": "BEmargin_08_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.002,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.001,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.001,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.001,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_03.json",
+    "model": "BEmargin_04_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 0.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 0.0,
+        "f1@k": 0.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_06.json",
+    "model": "BEmargin_04_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.002,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_02.json",
+    "model": "BEmargin_04_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_04.json",
+    "model": "BEmargin_04_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.01,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.01,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.009,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_01.json",
+    "model": "BEmargin_04_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 0.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 0.0,
+        "f1@k": 0.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 0.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 0.0,
+        "f1@k": 0.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 0.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 0.0,
+        "f1@k": 0.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 0.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 0.0,
+        "f1@k": 0.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_00.json",
+    "model": "BEmargin_04_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 0.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 0.0,
+        "f1@k": 0.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 0.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 0.0,
+        "f1@k": 0.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 0.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 0.0,
+        "f1@k": 0.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 0.0,
+        "false_positive_rate": 0.003,
+        "precision@k": 0.0,
+        "f1@k": 0.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_05.json",
+    "model": "BEmargin_04_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.005,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 0.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 0.0,
+        "f1@k": 0.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_09.json",
+    "model": "BEmargin_04_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.006,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.004,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_08.json",
+    "model": "BEmargin_04_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.008,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "GeM_07.json",
+    "model": "BEmargin_04_0",
+    "results": [
+      {
+        "k": 1,
+        "threshold": 0.95,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.002,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.96,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.001,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.97,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.001,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      },
+      {
+        "k": 1,
+        "threshold": 0.98,
+        "recall@k": 1.0,
+        "false_positive_rate": 0.001,
+        "precision@k": 1.0,
+        "f1@k": 1.0
+      }
+    ]
+  }
+]

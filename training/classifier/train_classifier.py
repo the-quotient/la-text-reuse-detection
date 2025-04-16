@@ -15,14 +15,12 @@ import matplotlib.pyplot as plt
 from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
 
 
-# ==== Distributed setup ====
 def setup():
     dist.init_process_group("nccl")
     local_rank = int(os.environ["LOCAL_RANK"])
     torch.cuda.set_device(local_rank)
     return local_rank
 
-# ==== Load data from JSON list with label mapping ====
 def load_json_data(path):
     sents1, sents2, labels = [], [], []
     with open(path, "r", encoding="utf-8") as f:
@@ -40,11 +38,11 @@ def load_json_data(path):
         labels.append(label)
     return sents1, sents2, labels
 
-# ==== Combine embeddings ====
+# Combine embeddings
 def combine_embeddings(e1, e2):
     return torch.cat([e1, e2, torch.abs(e1 - e2), e1 * e2], dim=1)
 
-# ==== Save/load cached embeddings ====
+# Save/load cached embeddings
 def load_or_compute_embeddings(encoder, sents1, sents2, device):
     if os.path.exists("../../../scratch/tmp/p_krae02/data/embeddings1.pt") and os.path.exists("../../../scratch/tmp/p_krae02/data/embeddings2.pt"):
         emb1 = torch.load("../../../scratch/tmp/p_krae02/data/embeddings1.pt", map_location=device)
@@ -59,7 +57,6 @@ def load_or_compute_embeddings(encoder, sents1, sents2, device):
             torch.save(emb2, "../../../scratch/tmp/p_krae02/data/embeddings2.pt")
     return emb1, emb2
 
-# ==== Classifier ====
 class PairClassifier(nn.Module):
     def __init__(self, input_dim, dropout=0.3):
         super().__init__()
@@ -76,7 +73,7 @@ class PairClassifier(nn.Module):
     def forward(self, x):
         return self.net(x)
 
-# ==== Main ====
+
 def main():
     local_rank = setup()
     device = torch.device("cuda", local_rank)
@@ -92,7 +89,7 @@ def main():
     X_combined = combine_embeddings(emb1, emb2)
     y_tensor = torch.tensor(labels)
 
-    # ==== Stratified split ====
+    
     X_train, X_val, y_train, y_val = train_test_split(
         X_combined.cpu().numpy(), y_tensor.cpu().numpy(),
         test_size=0.2, stratify=y_tensor.cpu().numpy(), random_state=42
@@ -114,7 +111,7 @@ def main():
     model = PairClassifier(input_dim).to(device)
     model = DDP(model, device_ids=[local_rank])
 
-    # ==== Class-weighted loss ====
+    # Class-weighted loss
     class_weights = compute_class_weight(
         class_weight='balanced', classes=np.array([0, 1, 2]), y=labels)
     weight_tensor = torch.tensor(class_weights, dtype=torch.float).to(device)

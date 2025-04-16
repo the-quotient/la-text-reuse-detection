@@ -1,20 +1,27 @@
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
+from tqdm.notebook import tqdm
 
-class Retrieval:
 
-    def __init__(self, model_name, queries, candidates=None):
-        print("Loading Sentence Transformer Model...")
+class Retriever:
+
+    def __init__(self, model_name, queries, query_embeddings=None, candidates=None):
         self.model = SentenceTransformer(model_name)
         self.query_sentences = queries
-        self.candidate_sentences = candidates
-        print("\nEmbedding queries...")
-        self.query_embeddings = self.model.encode(
-            queries, show_progress_bar=True
-        )
-        if candidates:
+        self.query_embeddings = None
+        self.candidate_sentences = None
+        self.candidate_embeddings = None
+        if query_embeddings is None:
+            print("\nEmbedding queries...")
+            self.query_embeddings = self.model.encode(
+                queries, show_progress_bar=True
+            )
+        else:
+            self.query_embeddings = query_embeddings
+        if candidates is not None:
             print("\nEmbedding candidates...")
+            self.candidate_sentences = candidates
             self.candidate_embeddings = self.model.encode(
                 candidates, show_progress_bar=True
             )
@@ -30,7 +37,7 @@ class Retrieval:
         print(" Candidates embedded.\n")
 
 
-    def retrieve(self, k=1, threshold=0.5):
+    def retrieve(self, k, threshold):
         results = {}
         for query, q_emb in zip(self.query_sentences, self.query_embeddings):
             sims = cosine_similarity([q_emb], self.candidate_embeddings)[0]
@@ -45,12 +52,12 @@ class Retrieval:
         return results
 
 
-    def retrieve_dual(self, k, fuzzy_threshold, retrieve_threshold):
+    def retrieve_dual(self, k, quote_threshold, reranking_threshold):
 
-        fuzzy_quotes = []
+        quotes = []
         to_rerank = []
 
-        for query, q_emb in zip(self.query_sentences, self.query_embeddings):
+        for query, q_emb in tqdm(zip(self.query_sentences, self.query_embeddings), total=len(self.query_sentences)):
             sims = cosine_similarity([q_emb], self.candidate_embeddings)[0]
             sorted_indices = np.argsort(-sims)[:k]
 
@@ -58,10 +65,10 @@ class Retrieval:
                 sim_score = sims[i]
                 candidate = self.candidate_sentences[i]
 
-                if sim_score >= fuzzy_threshold:
-                    fuzzy_quotes.append((query, candidate))
-                elif sim_score >= retrieve_threshold:
+                if sim_score >= quote_threshold:
+                    quotes.append((query, candidate))
+                elif sim_score >= reranking_threshold:
                     to_rerank.append((query, candidate))
 
-        return fuzzy_quotes, to_rerank
+        return quotes, to_rerank
 
